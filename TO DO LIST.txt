@@ -1,0 +1,74 @@
+TO DO LIST (Key issue) 
+Target: Complete Full World by end of December
+- Dynamic Filter on Blosc lz4
+- Preprocess more details (num of book update/market data idx arr)
+- Install Armadillo (numpy), mlpack (sklearn) and pytorch
+- Unit Test
+
+- Dask for cleaning the data
+
+
+# Current Best Time: 43 mins
+# Target: 5 mins / each day
+Features:
+- Quick OrderBook level Backtest
+- Support multiple strategy, trader (hyperparameter, i.e. behaviour), broker (trading venue, different commission/latency)
+- Support external input for trading signal (read external files)
+- Output raw backtest result (total equity curve, seperate equity curve, universe performance, raw long-short signal) in csv, and analyse it in Python
+
+cd /Users/alanriver/vcpkg
+
+- Strategy want to test:
+Statisical Arb: Johansen test, VECM
+Commodities Futures curve trading
+Options Selling (index etf, single stocks) + Delta Hedge + Bubble Test
+Stocks alpha trading
+BS Implied Vol vs Historical Vol Trading
+Momentum Strategy
+
+
+/Users/alanriver/Desktop/Projects/Backtester_C++/MarketData/20240328_QQQ.h5
+
+Current time: 58500000
+Cumulative time - Get Data - 30.9614 mins
+Cumulative time - Appending Data - 2.54099 mins
+Cumulative time - Update OrderBook - 9.49706mins
+
+
+idea: read hdf twice, one for int values, one for float values and store it in dict
+then make it a market event 
+
+
+
+Timer timer;
+            timer.start();
+            timer.stop();
+            time_updating_ob += timer.time_elapsed("m", "Update OrderBook -");
+            
+            if (cur_time%60000==0){
+                cout<<"Cumulative time - Update OrderBook - "<<time_updating_ob<<"mins"<<endl;
+            }
+
+cmake -B build .
+cmake --build build
+
+    for (auto me: me_list){
+        std::cout << "Instrument: " << me.instrument_id << " Time: " << me.ms_of_day;
+        std::cout << " Bid: " << me.bid << " Bid Size: " << me.bid_size;
+        std::cout << " Ask: " << me.ask << " Ask Size: " << me.ask_size << std::endl;;
+        i++;
+    }
+if (req_list[0] == 1660){
+                    for (int i = 0; i<n; i++){
+            MarketEvent me = me_list[i];
+            std::cout << "Current Time: " << cur_time << " ";
+            std::cout << "Instrument ID: " << me.instrument_id;
+            std::cout<<" Time: " << me.ms_of_day;
+            std::cout << " Bid: " << me.bid << " Bid Size: " << me.bid_size;
+            std::cout << " Ask: " << me.ask << " Ask Size: " << me.ask_size << std::endl;
+        }
+Unit test requirement:
+Loading data: Length match, no overlapping (check first vs last time across different processes
+mpirun -np 9 ./build/Backtest_cpp
+
+20241231 Current Best: 1481.04 s
