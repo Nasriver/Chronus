@@ -1,7 +1,5 @@
 TO DO LIST (Key issue) 
 Target: Complete Full World by end of December
-- Dynamic Filter on Blosc lz4
-- Preprocess more details (num of book update/market data idx arr)
 - Install Armadillo (numpy), mlpack (sklearn) and pytorch
 - Unit Test
 
@@ -16,7 +14,6 @@ Features:
 - Support external input for trading signal (read external files)
 - Output raw backtest result (total equity curve, seperate equity curve, universe performance, raw long-short signal) in csv, and analyse it in Python
 
-cd /Users/alanriver/vcpkg
 
 - Strategy want to test:
 Statisical Arb: Johansen test, VECM
@@ -72,3 +69,20 @@ Loading data: Length match, no overlapping (check first vs last time across diff
 mpirun -np 9 ./build/Backtest_cpp
 
 20241231 Current Best: 1481.04 s
+
+cd /path/to/your/project      # Navigate to your project directory
+git init                      # Initialize the local Git repository
+git add .                     # Stage all files for commit
+git commit -m "Initial commit" # Commit the changes
+git remote add origin https://github.com/your-username/my_project.git # Link to GitHub
+git push -u origin master     # Push to GitHub (replace "master" with "main" if necessary)
+
+Simplified Backtest 1s OrderBook (for usual alpha strategy). Assume No Delay Time increment issue
+Full Backtest 1ms Orderbook
+-- Installing: /usr/local/lib/pkgconfig/blosc.pc
+-- Installing: /usr/local/include/blosc.h
+-- Installing: /usr/local/include/blosc-export.h
+-- Installing: /usr/local/lib/libblosc.1.21.7.dylib
+-- Installing: /usr/local/lib/libblosc.1.dylib
+-- Installing: /usr/local/lib/libblosc.dylib
+-- Installing: /usr/local/lib/libblosc.a

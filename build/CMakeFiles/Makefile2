@@ -64,14 +64,16 @@ CMAKE_BINARY_DIR = /Users/alanriver/Desktop/Projects/Backtester_C++/build
 
 # The main recursive "all" target.
 all: CMakeFiles/Backtest_cpp.dir/all
+all: external/HighFive/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/Backtest_cpp.dir/codegen
+codegen: external/HighFive/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: external/HighFive/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -104,7 +106,27 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/Backtest_cpp.dir/clean
+clean: external/HighFive/clean
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory external/HighFive
+
+# Recursive "all" directory target.
+external/HighFive/all:
+.PHONY : external/HighFive/all
+
+# Recursive "codegen" directory target.
+external/HighFive/codegen:
+.PHONY : external/HighFive/codegen
+
+# Recursive "preinstall" directory target.
+external/HighFive/preinstall:
+.PHONY : external/HighFive/preinstall
+
+# Recursive "clean" directory target.
+external/HighFive/clean:
+.PHONY : external/HighFive/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Experimental.dir
@@ -981,12 +1003,12 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 CMakeFiles/Backtest_cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target Backtest_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target Backtest_cpp"
 .PHONY : CMakeFiles/Backtest_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Backtest_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Backtest_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles 0
 .PHONY : CMakeFiles/Backtest_cpp.dir/rule

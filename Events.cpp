@@ -99,8 +99,8 @@ MPI_Datatype create_data_request_event_mpi(){
     return dre_type;
 }
 
-std::map<std::string, MPI_Datatype>  create_all_event_mpi(){
-    std::map<std::string, MPI_Datatype> custom_mpi_type_map;
+std::unordered_map<std::string, MPI_Datatype>  create_all_event_mpi(){
+    std::unordered_map<std::string, MPI_Datatype> custom_mpi_type_map;
     custom_mpi_type_map["MarketEvent"] = create_market_event_mpi();
     custom_mpi_type_map["DataRequestEvent"] = create_data_request_event_mpi();
  

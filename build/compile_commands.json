@@ -1,32 +1,38 @@
 [
 {
   "directory": "/Users/alanriver/Desktop/Projects/Backtester_C++/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DHIGHFIVE_HAS_CONCEPTS=0 -DMPI_NO_CPPBIND -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include -isystem /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/BunnyGirl.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DH5_BUILT_AS_DYNAMIC_LIB -I/Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /usr/local/HDF_Group/HDF5/1.14.5/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/BunnyGirl.cpp",
   "file": "/Users/alanriver/Desktop/Projects/Backtester_C++/BunnyGirl.cpp",
   "output": "CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.o"
 },
 {
   "directory": "/Users/alanriver/Desktop/Projects/Backtester_C++/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DHIGHFIVE_HAS_CONCEPTS=0 -DMPI_NO_CPPBIND -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include -isystem /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/Broker.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Broker.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DH5_BUILT_AS_DYNAMIC_LIB -I/Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /usr/local/HDF_Group/HDF5/1.14.5/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/Participant.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Participant.cpp",
+  "file": "/Users/alanriver/Desktop/Projects/Backtester_C++/Participant.cpp",
+  "output": "CMakeFiles/Backtest_cpp.dir/Participant.cpp.o"
+},
+{
+  "directory": "/Users/alanriver/Desktop/Projects/Backtester_C++/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DH5_BUILT_AS_DYNAMIC_LIB -I/Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /usr/local/HDF_Group/HDF5/1.14.5/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/Broker.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Broker.cpp",
   "file": "/Users/alanriver/Desktop/Projects/Backtester_C++/Broker.cpp",
   "output": "CMakeFiles/Backtest_cpp.dir/Broker.cpp.o"
 },
 {
   "directory": "/Users/alanriver/Desktop/Projects/Backtester_C++/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DHIGHFIVE_HAS_CONCEPTS=0 -DMPI_NO_CPPBIND -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include -isystem /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/DataHandler.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DH5_BUILT_AS_DYNAMIC_LIB -I/Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /usr/local/HDF_Group/HDF5/1.14.5/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/DataHandler.cpp",
   "file": "/Users/alanriver/Desktop/Projects/Backtester_C++/DataHandler.cpp",
   "output": "CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o"
 },
 {
   "directory": "/Users/alanriver/Desktop/Projects/Backtester_C++/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DHIGHFIVE_HAS_CONCEPTS=0 -DMPI_NO_CPPBIND -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include -isystem /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/Events.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Events.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DH5_BUILT_AS_DYNAMIC_LIB -I/Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /usr/local/HDF_Group/HDF5/1.14.5/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/Events.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Events.cpp",
   "file": "/Users/alanriver/Desktop/Projects/Backtester_C++/Events.cpp",
   "output": "CMakeFiles/Backtest_cpp.dir/Events.cpp.o"
 },
 {
   "directory": "/Users/alanriver/Desktop/Projects/Backtester_C++/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DHIGHFIVE_HAS_CONCEPTS=0 -DMPI_NO_CPPBIND -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include -isystem /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/helper.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/helper.cpp",
-  "file": "/Users/alanriver/Desktop/Projects/Backtester_C++/helper.cpp",
-  "output": "CMakeFiles/Backtest_cpp.dir/helper.cpp.o"
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DH5_BUILT_AS_DYNAMIC_LIB -I/Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include -isystem /opt/homebrew/Cellar/open-mpi/5.0.6/include -isystem /usr/local/HDF_Group/HDF5/1.14.5/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -o CMakeFiles/Backtest_cpp.dir/Helper.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Helper.cpp",
+  "file": "/Users/alanriver/Desktop/Projects/Backtester_C++/Helper.cpp",
+  "output": "CMakeFiles/Backtest_cpp.dir/Helper.cpp.o"
 }
 ]

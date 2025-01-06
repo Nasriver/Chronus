@@ -64,6 +64,6 @@ struct BrokerMessage{
 
 MPI_Datatype create_market_event_mpi();
 MPI_Datatype create_data_request_event_mpi();
-std::map<std::string, MPI_Datatype> create_all_event_mpi();
+std::unordered_map<std::string, MPI_Datatype> create_all_event_mpi();
 
 #endif // EVENTS_H

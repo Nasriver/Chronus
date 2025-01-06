@@ -57,6 +57,24 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
+//C compiler
+CMAKE_C_COMPILER:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/cc
+
+//Flags used by the C compiler during all build types.
+CMAKE_C_FLAGS:STRING=
+
+//Flags used by the C compiler during DEBUG builds.
+CMAKE_C_FLAGS_DEBUG:STRING=-g
+
+//Flags used by the C compiler during MINSIZEREL builds.
+CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
+
+//Flags used by the C compiler during RELEASE builds.
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
+
+//Flags used by the C compiler during RELWITHDEBINFO builds.
+CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
+
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 
@@ -238,6 +256,9 @@ CTEST_SUBMIT_RETRY_DELAY:STRING=5
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
+//Path to a program.
+GITCOMMAND:FILEPATH=/opt/homebrew/bin/git
+
 //HDF5 C Wrapper compiler.  Used only to detect HDF5 compile flags.
 HDF5_C_COMPILER_EXECUTABLE:FILEPATH=/opt/homebrew/bin/h5cc
 
@@ -251,7 +272,7 @@ HDF5_C_LIBRARY_hdf5:FILEPATH=/opt/homebrew/lib/libhdf5.dylib
 HDF5_DIFF_EXECUTABLE:FILEPATH=/opt/homebrew/bin/h5diff
 
 //The directory containing a CMake configuration file for HDF5.
-HDF5_DIR:PATH=/Users/alanriver/vcpkg/packages/hdf5_arm64-osx/share/hdf5
+HDF5_DIR:PATH=/usr/local/HDF_Group/HDF5/1.14.5/cmake
 
 //HDF5 library compiled with parallel IO support
 HDF5_IS_PARALLEL:BOOL=FALSE
@@ -262,8 +283,61 @@ HDF5_hdf5_LIBRARY_DEBUG:FILEPATH=HDF5_hdf5_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 HDF5_hdf5_LIBRARY_RELEASE:FILEPATH=/usr/local/hdf5/lib/libhdf5.dylib
 
+//Build documentation
+HIGHFIVE_BUILD_DOCS:BOOL=OFF
+
+//Compile examples
+HIGHFIVE_EXAMPLES:BOOL=OFF
+
+//Find and link with HDF5.
+HIGHFIVE_FIND_HDF5:BOOL=ON
+
+//Enable bounds check for STL.
+HIGHFIVE_GLIBCXX_ASSERTIONS:BOOL=OFF
+
+//Print readable compiler errors w/ C++20 concepts
+HIGHFIVE_HAS_CONCEPTS:BOOL=OFF
+
+//Enable additional friend declarations. Certain compiler require
+// this On, others Off.
+HIGHFIVE_HAS_FRIEND_DECLARATIONS:BOOL=OFF
+
+//Convert warnings to errors.
+HIGHFIVE_HAS_WERROR:BOOL=OFF
+
+//Maximum number of compiler errors.
+HIGHFIVE_MAX_ERRORS:STRING=0
+
 //Enable Parallel HDF5 support
 HIGHFIVE_PARALLEL_HDF5:BOOL=OFF
+
+//Enable a group of sanitizers, requires compiler support. Supported:
+// 'address' and 'undefined'.
+HIGHFIVE_SANITIZER:STRING=OFF
+
+//Enable testing Boost features
+HIGHFIVE_TEST_BOOST:BOOL=OFF
+
+//Additionally, enable testing `boost::span`
+HIGHFIVE_TEST_BOOST_SPAN:BOOL=OFF
+
+//Enable testing Eigen
+HIGHFIVE_TEST_EIGEN:BOOL=OFF
+
+//Enable testing half-precision floats
+HIGHFIVE_TEST_HALF_FLOAT:BOOL=OFF
+
+//Enable testing OpenCV
+HIGHFIVE_TEST_OPENCV:BOOL=OFF
+
+//Enable testing std::span, requires C++20
+HIGHFIVE_TEST_SPAN:BOOL=OFF
+
+//Enable testing xtensor
+HIGHFIVE_TEST_XTENSOR:BOOL=OFF
+
+//Compile unit-tests
+HIGHFIVE_UNIT_TESTS:BOOL=OFF
 
 //Enable Boost Support
 HIGHFIVE_USE_BOOST:BOOL=OFF
@@ -277,11 +351,20 @@ HIGHFIVE_USE_INSTALL_DEPS:BOOL=OFF
 //Enable xtensor testing
 HIGHFIVE_USE_XTENSOR:BOOL=
 
-//Enable verbose logging
+//Set logging level to verbose.
 HIGHFIVE_VERBOSE:BOOL=OFF
+
+//Value Computed by CMake
+HighFive_BINARY_DIR:STATIC=/Users/alanriver/Desktop/Projects/Backtester_C++/build/external/HighFive
 
 //The directory containing a CMake configuration file for HighFive.
 HighFive_DIR:PATH=HighFive_DIR-NOTFOUND
+
+//Value Computed by CMake
+HighFive_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+HighFive_SOURCE_DIR:STATIC=/Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive
 
 //Command to build the project
 MAKECOMMAND:STRING=/opt/homebrew/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
@@ -335,6 +418,30 @@ MPI_CXX_LINK_FLAGS:STRING=
 
 //If true, the MPI-2 C++ bindings are disabled using definitions.
 MPI_CXX_SKIP_MPICXX:BOOL=OFF
+
+//MPI C additional include directories
+MPI_C_ADDITIONAL_INCLUDE_DIRS:STRING=
+
+//MPI compiler for C
+MPI_C_COMPILER:FILEPATH=/opt/homebrew/bin/mpicc
+
+//MPI C compiler wrapper include directories
+MPI_C_COMPILER_INCLUDE_DIRS:STRING=/opt/homebrew/Cellar/open-mpi/5.0.6/include
+
+//MPI C compilation definitions
+MPI_C_COMPILE_DEFINITIONS:STRING=
+
+//MPI C compilation options
+MPI_C_COMPILE_OPTIONS:STRING=
+
+//Path to a file.
+MPI_C_HEADER_DIR:PATH=/opt/homebrew/Cellar/open-mpi/5.0.6/include
+
+//MPI C libraries to link against
+MPI_C_LIB_NAMES:STRING=mpi
+
+//MPI C linker flags
+MPI_C_LINK_FLAGS:STRING=
 
 //Location of the mpi library for MPI
 MPI_mpi_LIBRARY:FILEPATH=/opt/homebrew/Cellar/open-mpi/5.0.6/lib/libmpi.dylib
@@ -422,6 +529,18 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER
+CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS
+CMAKE_C_FLAGS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_DEBUG
+CMAKE_C_FLAGS_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_MINSIZEREL
+CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELEASE
+CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
+CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
@@ -470,7 +589,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -526,13 +645,17 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding HDF5
-FIND_PACKAGE_MESSAGE_DETAILS_HDF5:INTERNAL=[/usr/local/hdf5/lib/libhdf5.dylib][/Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include;/usr/local/hdf5/include][c ][v1.14.4.3()]
+FIND_PACKAGE_MESSAGE_DETAILS_HDF5:INTERNAL=[hdf5-shared][/usr/local/HDF_Group/HDF5/1.14.5/include][c ][v1.14.5()]
 //Details about finding MPI
 FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][c ][v3.1()]
+//Details about finding MPI_C
+FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/opt/homebrew/Cellar/open-mpi/5.0.6/lib/libmpi.dylib][mpi][/opt/homebrew/Cellar/open-mpi/5.0.6/include][TRUE][v3.1()]
 //Details about finding MPI_CXX
 FIND_PACKAGE_MESSAGE_DETAILS_MPI_CXX:INTERNAL=[/opt/homebrew/Cellar/open-mpi/5.0.6/lib/libmpi.dylib][mpi][/opt/homebrew/Cellar/open-mpi/5.0.6/include][TRUE][v3.1()]
 //Details about finding ZLIB
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/lib/libz.tbd][/Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include][c ][v1.2.12()]
+//ADVANCED property for variable: GITCOMMAND
+GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: HDF5_C_COMPILER_EXECUTABLE
 HDF5_C_COMPILER_EXECUTABLE-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
@@ -547,6 +670,10 @@ HDF5_IS_PARALLEL-ADVANCED:INTERNAL=1
 HDF5_hdf5_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: HDF5_hdf5_LIBRARY_RELEASE
 HDF5_hdf5_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIGHFIVE_HAS_FRIEND_DECLARATIONS
+HIGHFIVE_HAS_FRIEND_DECLARATIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: HIGHFIVE_SANITIZER
+HIGHFIVE_SANITIZER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND
@@ -581,10 +708,28 @@ MPI_CXX_LIB_NAMES-ADVANCED:INTERNAL=1
 MPI_CXX_LINK_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPI_CXX_SKIP_MPICXX
 MPI_CXX_SKIP_MPICXX-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_ADDITIONAL_INCLUDE_DIRS
+MPI_C_ADDITIONAL_INCLUDE_DIRS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_COMPILER
+MPI_C_COMPILER-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_COMPILER_INCLUDE_DIRS
+MPI_C_COMPILER_INCLUDE_DIRS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_COMPILE_DEFINITIONS
+MPI_C_COMPILE_DEFINITIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_COMPILE_OPTIONS
+MPI_C_COMPILE_OPTIONS-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_HEADER_DIR
+MPI_C_HEADER_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_LIB_NAMES
+MPI_C_LIB_NAMES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MPI_C_LINK_FLAGS
+MPI_C_LINK_FLAGS-ADVANCED:INTERNAL=1
 //Result of TRY_COMPILE
 MPI_RESULT_CXX_test_mpi_MPICXX:INTERNAL=TRUE
 //Result of TRY_COMPILE
 MPI_RESULT_CXX_test_mpi_normal:INTERNAL=TRUE
+//Result of TRY_COMPILE
+MPI_RESULT_C_test_mpi_normal:INTERNAL=TRUE
 //ADVANCED property for variable: MPI_mpi_LIBRARY
 MPI_mpi_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_ARGN

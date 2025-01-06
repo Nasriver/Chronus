@@ -30,3 +30,14 @@
 /Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles/test.dir
 /Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles/edit_cache.dir
 /Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles/rebuild_cache.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles/list_install_components.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles/install.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles/install/local.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles/install/strip.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/external/HighFive/CMakeFiles/test.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/external/HighFive/CMakeFiles/edit_cache.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/external/HighFive/CMakeFiles/rebuild_cache.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/external/HighFive/CMakeFiles/list_install_components.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/external/HighFive/CMakeFiles/install.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/external/HighFive/CMakeFiles/install/local.dir
+/Users/alanriver/Desktop/Projects/Backtester_C++/build/external/HighFive/CMakeFiles/install/strip.dir

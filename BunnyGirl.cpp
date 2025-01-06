@@ -8,29 +8,25 @@
 #include "Events.hpp"
 #include "DataHandler.hpp"
 #include "Broker.hpp"
-#include "helper.hpp"
+#include "Helper.hpp"
 #include <memory>
 
 // Backtesting Setting
-std::string market_data_path = "/Users/alanriver/Desktop/Projects/Backtester_C++/MarketData/";
+std::string market_data_folder_path = "/Users/alanriver/Desktop/Projects/Backtester_C++/MarketData/";
 std::string start_date = "20240801";
 std::string end_date = "20240801";
-std::string cur_date = start_date;
 
 int start_time = 0;
 int end_time = 24300000;
-int cur_time = start_time;
-int section_time = 10 * 60 * 1000;
 
 // Backtest Engine
 int main(int argc, char** argv){
     // Character Setting
-    std::string status = "Open";
     // MPI Setting
     int world_size, world_rank;
     MPI_Group world_grp;
     
-    const std::map <std::string, std::vector<int>> ranks = {
+    const std::unordered_map <std::string, std::vector<int>> ranks = {
         {"Broker", {0}}, 
         {"Data_Handler", {1, 2, 3, 4, 5}},
         {"Trader", {6}},
@@ -45,8 +41,8 @@ int main(int argc, char** argv){
         {"TR", {6, 9}}, // For communication between Trader and Risk Manager (For existing positions assessment)
     };
 
-    std::map <std::string, MPI_Group> mpi_grps;
-    std::map <std::string, MPI_Comm> mpi_comms;
+    std::unordered_map <std::string, MPI_Group> mpi_grps;
+    std::unordered_map <std::string, MPI_Comm> mpi_comms;
 
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
@@ -56,11 +52,9 @@ int main(int argc, char** argv){
     mpi_comms["All"] = MPI_COMM_WORLD;
 
     // Initiate custom datatype for MPI
-    MPI_Datatype a = create_market_event_mpi();
-    
-    std::map<std::string, MPI_Datatype> custom_mpi_type_map = create_all_event_mpi();
+    std::unordered_map<std::string, MPI_Datatype> mpi_custom_type_map = create_all_event_mpi();
 
-    for (auto [charater, ranks] : ranks){
+    for (auto [character, ranks] : ranks){
         int* tmp_rank = &ranks[0];
         MPI_Group tmp_grp;
         MPI_Comm tmp_comm;
@@ -68,64 +62,33 @@ int main(int argc, char** argv){
         MPI_Group_incl(world_grp, ranks.size() , tmp_rank, &tmp_grp);
         MPI_Comm_create_group(MPI_COMM_WORLD, tmp_grp, 0, &tmp_comm);
 
-        mpi_grps[charater] = tmp_grp;
-        mpi_comms[charater] = tmp_comm;
-    }
+        mpi_grps[character] = tmp_grp;
+        mpi_comms[character] = tmp_comm;
+    };
+    // Network Latency (in ms)
+    // Broker has the highest priority of recieving market updates
+    // Assume Same Latency for other channel 
     
-    // Initiate Participants for each rank
+    // WIP
 
+    // Initiate  Participants for each rank
     switch (world_rank){
     case 0:{
-        Timer timer;
-        timer.start();
-        Broker broker("IB", start_date, start_time, market_data_path, mpi_grps, mpi_comms, custom_mpi_type_map);
-
-        while(status != "Closed"){
-            if (cur_time % (section_time) == 0){
-                std::cout<<"Current Time: "<<cur_time<<std::endl;
-            }
-            if (cur_time == 0){
-                broker.update_cur_date(cur_date);
-                
-            }
-            broker.update_cur_time(cur_time);
-            broker.request_orderbook();
-             
-            cur_time += 1;
-            if (cur_time == end_time){
-                status = "Closed";
-            }
-            
-        }
-        timer.stop();
-        timer.time_elapsed("s", "Full Backtest");
+        Broker broker;
+        broker.update_backtest_settings(start_date, end_date, start_time, end_time, market_data_folder_path);
+        broker.update_mpi_settings(mpi_grps, mpi_comms, mpi_custom_type_map);
+        broker.start();
         break;
     }
        
-    case 1:
-    case 2:
-    case 3:
-    case 4:
-    case 5:{
-        DataHandler datahandler(start_date, start_time, market_data_path, section_time, mpi_grps, mpi_comms, custom_mpi_type_map);
-
-        while(status != "Closed"){
-            if (cur_time % (section_time) == 0){
-                datahandler.update_cur_date(cur_date);
-            }
-            
-            datahandler.update_cur_time(cur_time);
-            datahandler.receive_request();
-            datahandler.handle_request();
-        
-            cur_time += 1;
-            if (cur_time == end_time){
-                status = "Closed";
-            }
-        }
-
+    case 1: case 2: case 3: case 4: case 5:{
+        DataHandler datahandler;
+        datahandler.update_backtest_settings(start_date, end_date, start_time, end_time, market_data_folder_path);
+        datahandler.update_mpi_settings(mpi_grps, mpi_comms, mpi_custom_type_map);
+        datahandler.start();
         break;
     }
+
     default:
         break;
     }

@@ -95,6 +95,51 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	/opt/homebrew/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	/opt/homebrew/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # The main all target
 all: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles /Users/alanriver/Desktop/Projects/Backtester_C++/build//CMakeFiles/progress.marks
@@ -599,29 +644,53 @@ Events.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/Events.cpp.s
 .PHONY : Events.cpp.s
 
-helper.o: helper.cpp.o
-.PHONY : helper.o
+Helper.o: Helper.cpp.o
+.PHONY : Helper.o
 
 # target to build an object file
-helper.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/helper.cpp.o
-.PHONY : helper.cpp.o
+Helper.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/Helper.cpp.o
+.PHONY : Helper.cpp.o
 
-helper.i: helper.cpp.i
-.PHONY : helper.i
+Helper.i: Helper.cpp.i
+.PHONY : Helper.i
 
 # target to preprocess a source file
-helper.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/helper.cpp.i
-.PHONY : helper.cpp.i
+Helper.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/Helper.cpp.i
+.PHONY : Helper.cpp.i
 
-helper.s: helper.cpp.s
-.PHONY : helper.s
+Helper.s: Helper.cpp.s
+.PHONY : Helper.s
 
 # target to generate assembly for a file
-helper.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/helper.cpp.s
-.PHONY : helper.cpp.s
+Helper.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/Helper.cpp.s
+.PHONY : Helper.cpp.s
+
+Participant.o: Participant.cpp.o
+.PHONY : Participant.o
+
+# target to build an object file
+Participant.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/Participant.cpp.o
+.PHONY : Participant.cpp.o
+
+Participant.i: Participant.cpp.i
+.PHONY : Participant.i
+
+# target to preprocess a source file
+Participant.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/Participant.cpp.i
+.PHONY : Participant.cpp.i
+
+Participant.s: Participant.cpp.s
+.PHONY : Participant.s
+
+# target to generate assembly for a file
+Participant.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Backtest_cpp.dir/build.make CMakeFiles/Backtest_cpp.dir/Participant.cpp.s
+.PHONY : Participant.cpp.s
 
 # Help Target
 help:
@@ -630,6 +699,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... install"
+	@echo "... install/local"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... Continuous"
@@ -673,9 +746,12 @@ help:
 	@echo "... Events.o"
 	@echo "... Events.i"
 	@echo "... Events.s"
-	@echo "... helper.o"
-	@echo "... helper.i"
-	@echo "... helper.s"
+	@echo "... Helper.o"
+	@echo "... Helper.i"
+	@echo "... Helper.s"
+	@echo "... Participant.o"
+	@echo "... Participant.i"
+	@echo "... Participant.s"
 .PHONY : help
 
 

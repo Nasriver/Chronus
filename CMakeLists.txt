@@ -4,22 +4,22 @@ project(Backtest_cpp VERSION 0.0.1 LANGUAGES CXX)
 include(CTest)
 enable_testing()
 list(APPEND CMAKE_PREFIX_PATH "/usr/local/HDF_Group/HDF5/1.14.5/")
-add_subdirectory(/HighFive)
+add_subdirectory(external/HighFive)
 
 find_package(MPI REQUIRED)
-find_package(HighFive CONFIG REQUIRED)
 
 add_executable(Backtest_cpp 
 BunnyGirl.cpp
-Broker.cpp
+Participant.hpp
+Participant.cpp
 Broker.hpp
-DataHandler.cpp
+Broker.cpp
 DataHandler.hpp
-Events.cpp
+DataHandler.cpp
 Events.hpp
-helper.cpp
-helper.hpp
-robin_hood.h
+Events.cpp
+Helper.hpp
+Helper.cpp
 )
 
 target_link_libraries(Backtest_cpp MPI::MPI_CXX HighFive)

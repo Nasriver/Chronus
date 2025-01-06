@@ -1,58 +1,45 @@
 #include <vector>
+#include <deque>
 #include <string>
-#include <HighFive/HighFive.hpp>
+#include <highfive/highfive.hpp>
 #include "Events.hpp"
 #include <mpi.h>
 #include <map>
-#include <HighFive/HighFive.hpp>
 #include <format>
-#include "helper.hpp"
-#include "robin_hood.h"
+#include "Helper.hpp"
+#include <array>
+#include <limits>
+#include <filesystem>
+#include "Participant.hpp"
+#include <cmath>
 
 #ifndef DATA_HANDLER_H
 #define DATA_HANDLER_H
-class DataHandler{
-    private:
-        // MPI related:
-        std::map <std::string, MPI_Group> mpi_grps;
-        std::map <std::string, MPI_Comm> mpi_comms;
-        std::map<std::string, MPI_Datatype> mpi_custom_type_map;
 
+class DataHandler: public Base_Participant{
+    private:
+
+        // DataHandler Info
         int datahandler_rank;
         int datahandler_size;
-        // Time
-        std::string cur_date;
-        int cur_time;
-        
+        const static int max_num_instrument = 50000; 
         // Market Data
-        std::string market_data_folder_path;
-        std::string market_data_path;
-        
-        
-        std::vector<std::vector<float>> market_data;
-        const static int max_num_instrument = 50000;
-        const static int max_trading_ms = 24300000;
-        robin_hood::unordered_map<int, std::vector<int>> market_data_idx_map; // temporary object
-        int* market_data_idx_arr = NULL;
-        std::vector<int> market_data_idx_ptr;
-        int cur_idx_map[max_num_instrument] = {-999};
-        robin_hood::unordered_map<int, std::vector<int>> book_update_map; // temporary object
-        std::vector<int> book_update_arr;
-        std::vector<int> book_update_ptr;
-        std::vector<int> book_update_len;
+        int num_chunks, chunk_ms;
+        int chunk_i = 0;
 
-        
-
-        MarketEvent orderbook[max_num_instrument];
-
-        int section_time;
         size_t offset = 0;
         size_t length = 0;
+        std::vector<std::array<float, 4>> market_data;
+        std::array<std::array<int, 2>, max_num_instrument> market_data_ptr;
+        std::vector<std::array<int, 2>> book_update_ptr;
+        int next_update_time;
+        int next_update_idx;
+
+        std::array< MarketEvent, max_num_instrument> orderbook;
 
         // Request
         DataRequest dummy_dr;
-        // need to add more relationship after including new character
-        std::map<std::string, std::string> network_channel = {
+        std::unordered_map<std::string, std::string> network_channel = {
             {"Broker" , "BD"}
         };
 
@@ -65,15 +52,16 @@ class DataHandler{
 
         
     public:
-        DataHandler(std::string _cur_date, int _cur_time, const std::string _market_data_folder_path, const int _section_time, 
-                    const std::map <std::string, MPI_Group> _mpi_grps, std::map <std::string, MPI_Comm> _mpi_comms, const std::map<std::string, MPI_Datatype> _mpi_custom_type_map);
-        void update_cur_time(int _cur_time);
-        void update_cur_date(std::string _cur_date);
-        void get_instrument_dataset_offset(const std::string& market_dataset_name);
-        void get_instrument_dataset(const int start, const int end);
+        DataHandler();
+        void get_chunk_info();
+        void get_market_data_offset();
+        void get_market_data_ptr();
+        void get_book_update_ptr();
+        void get_market_data();
+        void update_data();
         void update_orderbook();
         void receive_request();
         void handle_request();
-
+        void start();
 };
 #endif

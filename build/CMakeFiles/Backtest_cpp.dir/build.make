@@ -86,10 +86,24 @@ CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alanriver/Desktop/Projects/Backtester_C++/BunnyGirl.cpp -o CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.s
 
+CMakeFiles/Backtest_cpp.dir/Participant.cpp.o: CMakeFiles/Backtest_cpp.dir/flags.make
+CMakeFiles/Backtest_cpp.dir/Participant.cpp.o: /Users/alanriver/Desktop/Projects/Backtester_C++/Participant.cpp
+CMakeFiles/Backtest_cpp.dir/Participant.cpp.o: CMakeFiles/Backtest_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Backtest_cpp.dir/Participant.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Backtest_cpp.dir/Participant.cpp.o -MF CMakeFiles/Backtest_cpp.dir/Participant.cpp.o.d -o CMakeFiles/Backtest_cpp.dir/Participant.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Participant.cpp
+
+CMakeFiles/Backtest_cpp.dir/Participant.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Backtest_cpp.dir/Participant.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alanriver/Desktop/Projects/Backtester_C++/Participant.cpp > CMakeFiles/Backtest_cpp.dir/Participant.cpp.i
+
+CMakeFiles/Backtest_cpp.dir/Participant.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Backtest_cpp.dir/Participant.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alanriver/Desktop/Projects/Backtester_C++/Participant.cpp -o CMakeFiles/Backtest_cpp.dir/Participant.cpp.s
+
 CMakeFiles/Backtest_cpp.dir/Broker.cpp.o: CMakeFiles/Backtest_cpp.dir/flags.make
 CMakeFiles/Backtest_cpp.dir/Broker.cpp.o: /Users/alanriver/Desktop/Projects/Backtester_C++/Broker.cpp
 CMakeFiles/Backtest_cpp.dir/Broker.cpp.o: CMakeFiles/Backtest_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Backtest_cpp.dir/Broker.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Backtest_cpp.dir/Broker.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Backtest_cpp.dir/Broker.cpp.o -MF CMakeFiles/Backtest_cpp.dir/Broker.cpp.o.d -o CMakeFiles/Backtest_cpp.dir/Broker.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Broker.cpp
 
 CMakeFiles/Backtest_cpp.dir/Broker.cpp.i: cmake_force
@@ -103,7 +117,7 @@ CMakeFiles/Backtest_cpp.dir/Broker.cpp.s: cmake_force
 CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o: CMakeFiles/Backtest_cpp.dir/flags.make
 CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o: /Users/alanriver/Desktop/Projects/Backtester_C++/DataHandler.cpp
 CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o: CMakeFiles/Backtest_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o -MF CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o.d -o CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/DataHandler.cpp
 
 CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.i: cmake_force
@@ -117,7 +131,7 @@ CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.s: cmake_force
 CMakeFiles/Backtest_cpp.dir/Events.cpp.o: CMakeFiles/Backtest_cpp.dir/flags.make
 CMakeFiles/Backtest_cpp.dir/Events.cpp.o: /Users/alanriver/Desktop/Projects/Backtester_C++/Events.cpp
 CMakeFiles/Backtest_cpp.dir/Events.cpp.o: CMakeFiles/Backtest_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Backtest_cpp.dir/Events.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Backtest_cpp.dir/Events.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Backtest_cpp.dir/Events.cpp.o -MF CMakeFiles/Backtest_cpp.dir/Events.cpp.o.d -o CMakeFiles/Backtest_cpp.dir/Events.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Events.cpp
 
 CMakeFiles/Backtest_cpp.dir/Events.cpp.i: cmake_force
@@ -128,41 +142,43 @@ CMakeFiles/Backtest_cpp.dir/Events.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Backtest_cpp.dir/Events.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alanriver/Desktop/Projects/Backtester_C++/Events.cpp -o CMakeFiles/Backtest_cpp.dir/Events.cpp.s
 
-CMakeFiles/Backtest_cpp.dir/helper.cpp.o: CMakeFiles/Backtest_cpp.dir/flags.make
-CMakeFiles/Backtest_cpp.dir/helper.cpp.o: /Users/alanriver/Desktop/Projects/Backtester_C++/helper.cpp
-CMakeFiles/Backtest_cpp.dir/helper.cpp.o: CMakeFiles/Backtest_cpp.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Backtest_cpp.dir/helper.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Backtest_cpp.dir/helper.cpp.o -MF CMakeFiles/Backtest_cpp.dir/helper.cpp.o.d -o CMakeFiles/Backtest_cpp.dir/helper.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/helper.cpp
+CMakeFiles/Backtest_cpp.dir/Helper.cpp.o: CMakeFiles/Backtest_cpp.dir/flags.make
+CMakeFiles/Backtest_cpp.dir/Helper.cpp.o: /Users/alanriver/Desktop/Projects/Backtester_C++/Helper.cpp
+CMakeFiles/Backtest_cpp.dir/Helper.cpp.o: CMakeFiles/Backtest_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Backtest_cpp.dir/Helper.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Backtest_cpp.dir/Helper.cpp.o -MF CMakeFiles/Backtest_cpp.dir/Helper.cpp.o.d -o CMakeFiles/Backtest_cpp.dir/Helper.cpp.o -c /Users/alanriver/Desktop/Projects/Backtester_C++/Helper.cpp
 
-CMakeFiles/Backtest_cpp.dir/helper.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Backtest_cpp.dir/helper.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alanriver/Desktop/Projects/Backtester_C++/helper.cpp > CMakeFiles/Backtest_cpp.dir/helper.cpp.i
+CMakeFiles/Backtest_cpp.dir/Helper.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Backtest_cpp.dir/Helper.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/alanriver/Desktop/Projects/Backtester_C++/Helper.cpp > CMakeFiles/Backtest_cpp.dir/Helper.cpp.i
 
-CMakeFiles/Backtest_cpp.dir/helper.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Backtest_cpp.dir/helper.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alanriver/Desktop/Projects/Backtester_C++/helper.cpp -o CMakeFiles/Backtest_cpp.dir/helper.cpp.s
+CMakeFiles/Backtest_cpp.dir/Helper.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Backtest_cpp.dir/Helper.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/alanriver/Desktop/Projects/Backtester_C++/Helper.cpp -o CMakeFiles/Backtest_cpp.dir/Helper.cpp.s
 
 # Object files for target Backtest_cpp
 Backtest_cpp_OBJECTS = \
 "CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.o" \
+"CMakeFiles/Backtest_cpp.dir/Participant.cpp.o" \
 "CMakeFiles/Backtest_cpp.dir/Broker.cpp.o" \
 "CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o" \
 "CMakeFiles/Backtest_cpp.dir/Events.cpp.o" \
-"CMakeFiles/Backtest_cpp.dir/helper.cpp.o"
+"CMakeFiles/Backtest_cpp.dir/Helper.cpp.o"
 
 # External object files for target Backtest_cpp
 Backtest_cpp_EXTERNAL_OBJECTS =
 
 Backtest_cpp: CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.o
+Backtest_cpp: CMakeFiles/Backtest_cpp.dir/Participant.cpp.o
 Backtest_cpp: CMakeFiles/Backtest_cpp.dir/Broker.cpp.o
 Backtest_cpp: CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o
 Backtest_cpp: CMakeFiles/Backtest_cpp.dir/Events.cpp.o
-Backtest_cpp: CMakeFiles/Backtest_cpp.dir/helper.cpp.o
+Backtest_cpp: CMakeFiles/Backtest_cpp.dir/Helper.cpp.o
 Backtest_cpp: CMakeFiles/Backtest_cpp.dir/build.make
+Backtest_cpp: /usr/local/HDF_Group/HDF5/1.14.5/lib/libhdf5.310.5.0.dylib
 Backtest_cpp: /opt/homebrew/Cellar/open-mpi/5.0.6/lib/libmpi.dylib
-Backtest_cpp: /usr/local/hdf5/lib/libhdf5.dylib
 Backtest_cpp: CMakeFiles/Backtest_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Backtest_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/alanriver/Desktop/Projects/Backtester_C++/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Backtest_cpp"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Backtest_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -6,6 +6,11 @@
 			[
 				{
 					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
 					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
@@ -45,12 +50,28 @@
 						27,
 						28
 					]
+				},
+				{
+					"build" : "external/HighFive",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-external.HighFive-Debug-8657cb56de04ca33277b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.13"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "external/HighFive"
 				}
 			],
 			"name" : "Debug",
 			"projects" : 
 			[
 				{
+					"childIndexes" : 
+					[
+						1
+					],
 					"directoryIndexes" : 
 					[
 						0
@@ -88,6 +109,14 @@
 						27,
 						28
 					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "HighFive",
+					"parentIndex" : 0
 				}
 			],
 			"targets" : 
@@ -95,7 +124,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Backtest_cpp::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Backtest_cpp-Debug-679198b9794d284ea9ea.json",
+					"jsonFile" : "target-Backtest_cpp-Debug-4bfa42c5a6714d6b4a4d.json",
 					"name" : "Backtest_cpp",
 					"projectIndex" : 0
 				},

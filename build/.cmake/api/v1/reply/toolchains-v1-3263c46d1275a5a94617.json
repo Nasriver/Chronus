@@ -5,6 +5,14 @@
 		{
 			"compiler" : 
 			{
+				"implicit" : {},
+				"path" : "/Library/Developer/CommandLineTools/usr/bin/cc"
+			},
+			"language" : "C"
+		},
+		{
+			"compiler" : 
+			{
 				"id" : "AppleClang",
 				"implicit" : 
 				{

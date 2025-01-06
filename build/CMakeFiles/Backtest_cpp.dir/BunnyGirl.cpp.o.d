@@ -997,12 +997,12 @@ CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.o: \
   /opt/homebrew/Cellar/open-mpi/5.0.6/include/mpi_portable_platform.h \
   /Users/alanriver/Desktop/Projects/Backtester_C++/Events.hpp \
   /Users/alanriver/Desktop/Projects/Backtester_C++/DataHandler.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/HighFive/HighFive.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5Attribute.hpp \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Apublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5public.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5pubconf.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5version.h \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/highfive.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5Attribute.hpp \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Apublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5public.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5pubconf.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5version.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/cinttypes \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/inttypes.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/inttypes.h \
@@ -1011,46 +1011,48 @@ CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/xlocale/_inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/stdbool.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdbool.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5api_adpt.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Ipublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Opublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Tpublic.h \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5DataType.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5Object.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5_definitions.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Friends.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Object_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5Exception.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/H5Exception_misc.hpp \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5api_adpt.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Ipublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Opublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Tpublic.h \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5DataType.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5Object.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5_definitions.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Friends.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Object_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5Exception.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/H5Exception_misc.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/sstream \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/h5_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/h5e_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Epublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Epubgen.h \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5Utility.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/H5Friends.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5i_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Utils.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/string_padding.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5PropertyList.hpp \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Ppublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5ACpublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Cpublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Dpublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Fpublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5FDpublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Lpublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5MMpublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Spublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Zpublic.h \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5Exception.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5PropertyList_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5p_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5t_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5DataType_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/h5_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/h5e_wrapper.hpp \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Epublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Epubgen.h \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5Utility.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/H5Friends.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5i_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Utils.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/string_padding.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5PropertyList.hpp \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Ppublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5ACpublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Cpublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Dpublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Fpublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5FDpublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Lpublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5MMpublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Spublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Zpublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5FDmpi.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5FDmpio.h \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5Exception.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5PropertyList_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5p_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5t_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5DataType_misc.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/complex \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Inspector_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Inspector_misc.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/cassert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/_assert.h \
@@ -1069,61 +1071,63 @@ CMakeFiles/Backtest_cpp.dir/BunnyGirl.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__numeric/saturation_arithmetic.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5Reference.hpp \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Rpublic.h \
-  /Users/alanriver/vcpkg/packages/hdf5_arm64-osx/include/H5Gpublic.h \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/H5_definitions.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/H5Reference_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/H5Utils.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/../H5Object.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/h5r_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Inspector_decl.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Path_traits.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5DataSet.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5DataSpace.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Dataspace_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Converter_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5DataType.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5s_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Annotate_traits.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5Attribute.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Slice_traits.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5PropertyList.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5File.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5FileDriver.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5FileDriver_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Node_traits.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Annotate_traits_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Attribute_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5DataSpace.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5ReadWrite_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5a_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5d_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Iterables_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5File_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5f_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Node_traits_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5DataSet.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5Group.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5Object.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/H5Annotate_traits.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/H5Node_traits.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/H5Path_traits.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../H5Selection.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/../bits/H5Slice_traits.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5DataSet_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Selection_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Slice_traits_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5l_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5g_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/h5o_wrapper.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/bits/H5Path_traits_misc.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5Group.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5Reference.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5Selection.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5Utility.hpp \
-  /Users/alanriver/vcpkg/packages/highfive_arm64-osx/include/highfive/H5Version.hpp \
-  /Users/alanriver/Desktop/Projects/Backtester_C++/helper.hpp \
-  /Users/alanriver/Desktop/Projects/Backtester_C++/robin_hood.h \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5Reference.hpp \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Rpublic.h \
+  /usr/local/HDF_Group/HDF5/1.14.5/include/H5Gpublic.h \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/H5_definitions.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/H5Reference_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/H5Utils.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/../H5Object.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/h5r_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Inspector_decl.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/compute_total_size.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5DataSpace.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Dataspace_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Converter_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5DataType.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5s_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Path_traits.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5DataSet.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Annotate_traits.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5Attribute.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Slice_traits.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/convert_size_vector.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5PropertyList.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5File.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Node_traits.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Annotate_traits_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Attribute_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5DataSpace.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5ReadWrite_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5a_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5d_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/squeeze.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/assert_compatible_spaces.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Iterables_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5File_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5f_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Node_traits_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5DataSet.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5Group.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5Object.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/H5Annotate_traits.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/H5Node_traits.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/H5Path_traits.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../H5Selection.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/../bits/H5Slice_traits.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5DataSet_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Selection_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Slice_traits_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5l_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5g_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/h5o_wrapper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/bits/H5Path_traits_misc.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5Group.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5Reference.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5Selection.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5Utility.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/external/HighFive/include/highfive/H5Version.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/Helper.hpp \
+  /Users/alanriver/Desktop/Projects/Backtester_C++/Participant.hpp \
   /Users/alanriver/Desktop/Projects/Backtester_C++/Broker.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/usr/include/c++/v1/fstream

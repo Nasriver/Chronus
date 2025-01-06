@@ -9,8 +9,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/Backtest_cpp.dir/DataHandler.cpp.o.d"
   "CMakeFiles/Backtest_cpp.dir/Events.cpp.o"
   "CMakeFiles/Backtest_cpp.dir/Events.cpp.o.d"
-  "CMakeFiles/Backtest_cpp.dir/helper.cpp.o"
-  "CMakeFiles/Backtest_cpp.dir/helper.cpp.o.d"
+  "CMakeFiles/Backtest_cpp.dir/Helper.cpp.o"
+  "CMakeFiles/Backtest_cpp.dir/Helper.cpp.o.d"
+  "CMakeFiles/Backtest_cpp.dir/Participant.cpp.o"
+  "CMakeFiles/Backtest_cpp.dir/Participant.cpp.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

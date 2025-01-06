@@ -1,11 +1,4 @@
-#include <iostream>
-#include <map>
-#include <vector>
-#include "Events.hpp"
-#include <string>
-#include <chrono>
-#include "helper.hpp"
-#include <mutex>
+#include "Helper.hpp"
 
 
 Timer::Timer(){
@@ -49,14 +42,40 @@ template <class T> void releaseVectorMemory(std::vector<T>& vec) {
     std::vector<T>().swap(vec); 
 }
 
-MarketEvent get_market_event(std::vector<float> raw_market_data){
-    MarketEvent me(0, 0, 0, 0, 0, 0);
-    me.instrument_id = raw_market_data[5];
-    me.ms_of_day = raw_market_data[0];
-    me.bid = raw_market_data[2];
-    me.bid_size = raw_market_data[1];
-    me.ask = raw_market_data[4];
-    me.ask_size = raw_market_data[3];
-
+MarketEvent get_market_event(const int instrument_id, const int ms_of_day, const std::array<float, 4> raw_market_data){
+    MarketEvent me(instrument_id,ms_of_day, raw_market_data[0], raw_market_data[1], raw_market_data[2], raw_market_data[3]);
     return me;
+}
+
+std::string time_increment_one_days(const std::string cur_date){
+    int cur_date_int = std::stoi(cur_date);
+
+    int y = cur_date_int / 10000;
+    cur_date_int -= y * 10000;
+
+    int m = cur_date_int / 100;
+    cur_date_int -= m * 100;   
+
+    int d = cur_date_int / 1;
+
+    int last_day[12] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    // Leap Year
+    if (y % 4 == 0){
+        last_day[1] = 29;
+    } 
+
+    d += 1;
+
+    if (d > last_day[m-1]){
+        m += 1;
+    }
+
+    if (m > 12){
+        m = 1;
+        y += 1;
+    }
+
+    int next_date_int = y * 10000 + m * 100 + d;
+    return std::to_string(next_date_int);
+
 }
